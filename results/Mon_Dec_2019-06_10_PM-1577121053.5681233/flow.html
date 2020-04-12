@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<title>Flow Oscillations in Pipes Design</title>
+<link rel='stylesheet' href='../../Designs/style/flow.css'>
+<link rel='stylesheet' href='../../style/flow.css'>
+<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+</head>
+<body>
+<header class='header-cont'>
+<div class='header center-text'>
+Flow Oscillations in Pipes Design
+</div>
+<div class='date center-text'>TABLES AND GRAPHS</div>
+<div class='date center-text'>John Oyegbite || Monday December, 2019 @ 06:10 PM</div>
+</header>
+<aside class='navigation-drawer'>
+<div class='flow-parameters-header'>Flow Parameters</div>
+<div class='navigation-head'>Pipe properties:</div>
+<div class='value-unit'>
+<div class='value'> D = 0.9 </div>
+<div class='unit'>Diameter of pipe (m)</div>
+</div>
+<div class='value-unit'>
+<div class='value'> L = 2000.0</div>
+<div class='unit'>Length of pipe (m)</div>
+</div>
+<div class='value-unit'>
+<div class='value'>v = 0.007093</div>
+<div class='unit'>Kinematic viscosity (m<sup>2</sup>/s)</div>
+</div>
+<div class='value-unit'>
+<div class='value'>e = 0.001</div>
+<div class='unit'>Roughness height (m)</div>
+</div>
+<hr>
+<div class='navigation-head'>Initial conditions:</div>
+<div class='value-unit'>
+<div class='value'>t0 = 0.0</div>
+<div class='unit'>Initial time (s)</div>
+</div>
+<div class='value-unit'>
+<div class='value'>z0 = 0.7</div>
+<div class='unit'>Initial head (m)</div>
+</div>
+<div class='value-unit'>
+<div class='value'>V0 = 0.0 </div>
+<div class='unit'>Initial velocity (m/s)</div>
+</div>
+<div class='value-unit'>
+<div class='value'>t = 100.0 </div>
+<div class='unit'>Final time (s)</div>
+</div>
+<div class='value-unit'>
+<div class='value'>h = 5.0 </div>
+<div class='unit'>Initial time step (s)</div>
+</div>
+<div class='value-unit'>
+<div class='value'>g = 9.81</div>
+<div class='unit'>Acceleration due to gravity (m/s<sup>2</sup>)</div>
+</div>
+<div class='value-unit'>
+<div class='value'>Error tolerance = 0.001</div>
+<div class='unit'>Error tolerance</div>
+</div>
+<div class='value-unit'>
+<div class='value'>Refined tolerance = 1.0000000000000001e-07</div>
+<div class='unit'>Refined tolerance</div>
+</div>
+<div class='clear'></div>
+<div class='clear'></div>
+</aside>
+<div class='container'>
+<div class='flow-container'>
+<div class='calculation-header'>Pipe calculations</div>
+<div class='table-header-cont'>
+<div class='table-header'>
+<span>Pipe Table</span>
+<p>(error tolerance: 0.001, refined error tolerance: 1.0000000000000001e-07)</p>
+</div>
+<div class='table-body'>
+<table>
+    <tr>
+        <th>Sn</th>
+        <th>Time, t</th>
+        <th>Exact (z)</th>
+        <th>Trapezoidal</th>
+        <th>Runge-Kutta</th>
+        <th>Adams Bashforth</th>
+        <th>Adams Moulton</th>
+    </tr>
+    <tr>
+        <td>00</td>
+        <td>0.0</td>
+        <td>0.70000</td>
+        <td>0.70000</td>
+        <td>0.70000</td>
+        <td>0.70000</td>
+        <td>0.70000</td>
+    </tr>
+    <tr>
+        <td>01</td>
+        <td>5.0</td>
+        <td>0.64441</td>
+        <td>0.64349</td>
+        <td>0.64432</td>
+        <td>0.64434</td>
+        <td>0.64432</td>
+    </tr>
+    <tr>
+        <td>02</td>
+        <td>10.0</td>
+        <td>0.54738</td>
+        <td>0.54688</td>
+        <td>0.54732</td>
+        <td>0.54727</td>
+        <td>0.54768</td>
+    </tr>
+    <tr>
+        <td>03</td>
+        <td>15.0</td>
+        <td>0.45268</td>
+        <td>0.45253</td>
+        <td>0.45265</td>
+        <td>0.45262</td>
+        <td>0.45294</td>
+    </tr>
+    <tr>
+        <td>04</td>
+        <td>20.0</td>
+        <td>0.37081</td>
+        <td>0.37083</td>
+        <td>0.37080</td>
+        <td>0.37077</td>
+        <td>0.37096</td>
+    </tr>
+    <tr>
+        <td>05</td>
+        <td>25.0</td>
+        <td>0.30268</td>
+        <td>0.30278</td>
+        <td>0.30268</td>
+        <td>0.30266</td>
+        <td>0.30274</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>30.0</td>
+        <td>0.24675</td>
+        <td>0.24687</td>
+        <td>0.24675</td>
+        <td>0.24674</td>
+        <td>0.24678</td>
+    </tr>
+    <tr>
+        <td>07</td>
+        <td>35.0</td>
+        <td>0.20106</td>
+        <td>0.20119</td>
+        <td>0.20106</td>
+        <td>0.20105</td>
+        <td>0.20107</td>
+    </tr>
+    <tr>
+        <td>08</td>
+        <td>40.0</td>
+        <td>0.16380</td>
+        <td>0.16392</td>
+        <td>0.16380</td>
+        <td>0.16379</td>
+        <td>0.16381</td>
+    </tr>
+    <tr>
+        <td>09</td>
+        <td>45.0</td>
+        <td>0.13344</td>
+        <td>0.13355</td>
+        <td>0.13344</td>
+        <td>0.13343</td>
+        <td>0.13344</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>50.0</td>
+        <td>0.10870</td>
+        <td>0.10880</td>
+        <td>0.10870</td>
+        <td>0.10869</td>
+        <td>0.10870</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>55.0</td>
+        <td>0.08855</td>
+        <td>0.08864</td>
+        <td>0.08855</td>
+        <td>0.08854</td>
+        <td>0.08855</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>60.0</td>
+        <td>0.07213</td>
+        <td>0.07221</td>
+        <td>0.07213</td>
+        <td>0.07212</td>
+        <td>0.07213</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>65.0</td>
+        <td>0.05876</td>
+        <td>0.05883</td>
+        <td>0.05876</td>
+        <td>0.05875</td>
+        <td>0.05876</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>70.0</td>
+        <td>0.04787</td>
+        <td>0.04793</td>
+        <td>0.04787</td>
+        <td>0.04786</td>
+        <td>0.04787</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>75.0</td>
+        <td>0.03899</td>
+        <td>0.03905</td>
+        <td>0.03899</td>
+        <td>0.03898</td>
+        <td>0.03899</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>80.0</td>
+        <td>0.03176</td>
+        <td>0.03181</td>
+        <td>0.03176</td>
+        <td>0.03175</td>
+        <td>0.03176</td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>85.0</td>
+        <td>0.02587</td>
+        <td>0.02592</td>
+        <td>0.02587</td>
+        <td>0.02586</td>
+        <td>0.02587</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>90.0</td>
+        <td>0.02108</td>
+        <td>0.02111</td>
+        <td>0.02108</td>
+        <td>0.02107</td>
+        <td>0.02108</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>95.0</td>
+        <td>0.01717</td>
+        <td>0.01720</td>
+        <td>0.01717</td>
+        <td>0.01716</td>
+        <td>0.01717</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>100.0</td>
+        <td>0.01399</td>
+        <td>0.01401</td>
+        <td>0.01399</td>
+        <td>0.01398</td>
+        <td>0.01399</td>
+    </tr>
+    <tr>
+        <td>-----</td>
+        <td>-----</td>
+        <td>-----</td>
+        <td>-----</td>
+        <td>-----</td>
+        <td>-----</td>
+        <td>-----</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>Initial h (m): </td>
+        <td>-----</td>
+        <td>5.00000</td>
+        <td>5.00000</td>
+        <td>5.00000</td>
+        <td>5.00000</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>Final h (m): </td>
+        <td>-----</td>
+        <td>1.25000</td>
+        <td>2.50000</td>
+        <td>1.25000</td>
+        <td>2.50000</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>Time t (s): </td>
+        <td>-----</td>
+        <td>0.01099</td>
+        <td>0.00700</td>
+        <td>0.04797</td>
+        <td>0.00899</td>
+    </tr>
+</table>
+</div>
+</div>
+<div class='graph-header-cont'>
+<div class='graph-header'>Pipe Graph</div>
+<div class='graph-body'>
+<img src='C:\Users\USER\Videos\OYEGBITE\oyegbite_main\oyegbite_self_education\Unilag\FINAL_YR_PROJECT\FLOW_OSCILLATIONS_IN_PIPES\graphs\(D_0.9)-(L_2000.0)-(errTol_0.001)\Pipe-Numerical methods.png' alt='Graph of Pipe-Head against Time'>
+<p class='center-text caption'>Graph of (water) Head against Time in Pipe</p>
+</div>
+</div>
+</div>
+<div class='clear'></div>
+</div></body>
+</html>

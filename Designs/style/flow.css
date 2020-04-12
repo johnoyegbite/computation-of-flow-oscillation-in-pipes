@@ -1,0 +1,191 @@
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #444444;
+    /* text-align: center; */
+}
+
+.clear {
+  /* clear: both; */
+  height: 50px;
+}
+
+.header-cont {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  /* border: None; */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.19);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 999;
+  background: white;
+  margin-top: 0px;
+}
+
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 20px;
+  /* border: 1px solid blue; */
+  padding: 10px;
+  /* width: 100%; */
+}
+
+.date {
+  padding: 10px;
+  /* border: 1px solid red; */
+  /* width: 100%; */
+}
+
+.navigation-drawer{
+  position: fixed;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  height: calc(100%);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  width: 280px;
+  background: #444444;
+  color: white;
+  z-index: 888;
+  padding-bottom: 200px;
+  /* padding-top: 50px; */
+
+}
+
+.navigation-head {
+  padding-left: 10px;
+}
+
+.flow-parameters-header{
+  text-align: center;
+  padding: 20px;
+}
+
+.value-unit {
+  margin: 10px;
+}
+
+.value {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.unit {
+  font-size: 12px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.container {
+  position: absolute;
+  margin: 70px 0px 50px calc(280px + 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.flow-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  /* width: calc(100%); */
+  text-align: center;
+}
+
+.calculation-header {
+  padding: 10px 10px 0px 10px; 
+  font-size: 20px;
+  text-align: left;
+}
+
+.table-header-cont, .graph-header-cont {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.table-header, .graph-header {
+  padding: 10px;
+  text-align: center;
+}
+
+.graph-header {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.table-body {
+  text-align: center;
+}
+
+.graph-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+}
+
+img {
+  width: 200;
+  height: 200;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding: 5px;
+  /* border: 1px solid red; */
+}
+
+.graph-body:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.caption {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 4px;
+  margin: 0px;
+  /* background: yellow; */
+}
+
+.caption:hover {
+  background: #444444;
+  color: white;
+  
+}
+
+table {
+  border-collapse: collapse;
+  /* width: 100%; */
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
