@@ -33,7 +33,3 @@ the process of finding solutions.
 ### **Significance of Study**
 > There is no doubt that this program developed would assist students, researchers and
 practicing engineers in the industry in surge computations.
-
-##### **Contact Info.**
-* Email: oyegbitejohn@gmail.com
-* LinkedIn: https://www.linkedin.com/in/john-oyegbite-67bb9913a
